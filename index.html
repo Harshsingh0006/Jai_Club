@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DE4L465S3F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DE4L465S3F');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JAI Club</title>
@@ -17,6 +8,7 @@
 <link rel="icon" href="images/favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
@@ -178,6 +170,102 @@ body{
   transform:translateY(0);
 }
 
+.info-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.info-card{
+  background:linear-gradient(90deg,#ff7a7a,#a855f7,#3b82f6);
+  padding:25px;
+  border-radius:15px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+  display:block;
+}
+
+.info-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(168,85,247,0.6);
+}
+
+.info-card h3{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.info-card p{
+  color:#cbd5e1;
+  font-size:14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+  body{
+    padding:0;
+  }
+
+  .logo{
+    width:140px;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .btn{
+    width:100%;
+    font-size:16px;
+    padding:14px;
+  }
+
+  .cards{
+    flex-direction:column;
+  }
+
+  .big-cards{
+    grid-template-columns:1fr;
+  }
+
+  .section{
+    padding:20px 15px;
+  }
+
+  .section-title{
+    font-size:22px;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .info-card{
+    padding:18px;
+  }
+
+  .winner{
+    font-size:14px;
+  }
+
+  .popup-win{
+    left:10px;
+    right:10px;
+    font-size:13px;
+  }
+
+  .sticky{
+    padding:12px;
+  }
+
+}
+
 footer{
   text-align:center;
   font-size:12px;
@@ -194,8 +282,8 @@ footer{
 </div>
 
 <div class="hero">
-  <h1>🎮 Join JAI Club & Win Money 💰</h1>
-  <p>Play exciting games and earn real cash easily!</p>
+  <h1>🎮 Join JAI Club & Enjoy Exciting Rewards 🎁</h1>
+<p>Play engaging games and unlock rewards with a smooth experience</p>
 
   <a href="https://www.jaiclub43.com/#/register?invitationCode=858121387696" class="btn">
     🚀 Register Now
@@ -207,42 +295,68 @@ footer{
 
   <div class="cards big-cards">
     <div class="card">
-      💸 <h3>Instant Withdrawals</h3>
-      <p>Withdraw your winnings anytime without delay</p>
+      💸 <h3>Instant Transfer</h3>
+      <p>Quick and smooth access to your rewards</p>
     </div>
 
     <div class="card">
-      🔥 <h3>Daily Earnings</h3>
-      <p>Earn money daily with simple gameplay</p>
+      🔥 <h3>Daily Rewards</h3>
+     <p>Enjoy daily rewards with simple gameplay</p>
     </div>
 
     <div class="card">
       🎯 <h3>Easy to Play</h3>
-      <p>No skills needed, just play & win</p>
+      <p>Easy to get started and enjoy the experience</p>
     </div>
 
     <div class="card">
       ⚡ <h3>Fast Results</h3>
-      <p>Get results instantly after each game</p>
+      <p>Instant results after each round</p>
     </div>
 
     <div class="card">
       🎁 <h3>Signup Bonus</h3>
-      <p>Get bonus when you register today</p>
+      <p>Get special benefits when you register today</p>
     </div>
 
     <div class="card">
       🔐 <h3>Secure Platform</h3>
-      <p>Your data & money are safe</p>
+      <p>Your data and experience are सुरक्षित and protected</p>
     </div>
   </div>
 </div>
 
 <div class="section">
-  <h2 class="section-title">🏆 Live Winners</h2>
+  <h2 class="section-title">Explore More</h2>
+
+  <div class="info-grid">
+    <a href="about.html" class="info-card">
+      <h3>About Platform</h3>
+      <p>Learn more about the platform, features and experience</p>
+    </a>
+
+    <a href="how-it-works.html" class="info-card">
+      <h3>How It Works</h3>
+      <p>Understand how to get started and explore the platform</p>
+    </a>
+
+    <a href="privacy.html" class="info-card">
+      <h3>Privacy Policy</h3>
+      <p>Read how your data is handled and protected</p>
+    </a>
+
+    <a href="terms.html" class="info-card">
+      <h3>Terms & Conditions</h3>
+      <p>Review platform guidelines and usage terms</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="section-title">🏆 Live Rewards</h2>
 
   <div class="winner-box" id="winnerBox">
-    <div class="winner">🔥 Rahul won ₹2,300</div>
+    <div class="winner">"🔥 Rahul unlocked a reward"</div>
   </div>
 </div>
 
@@ -253,21 +367,21 @@ footer{
 
 <div class="sticky">
   <a href="https://www.jaiclub43.com/#/register?invitationCode=858121387696">
-    👉 REGISTER & START WINNING
+    👉 REGISTER & START GETTING REWARDS
   </a>
 </div>
 
 <div id="popup" class="popup-win">
-  💰 Rahul just won ₹2,300
+  "🔥 Rahul unlocked a reward"
 </div>
 
 <script>
 let winners = [
-  "🔥 Rahul won ₹2300",
-  "💸 Amit won ₹5400",
-  "🚀 Sneha earned ₹1200",
-  "🔥 Ravi won ₹3000",
-  "💰 Pooja earned ₹4500"
+  "🔥 Rahul unlocked a reward",
+  "⭐ Amit completed a level",
+  "🚀 Sneha achieved a milestone",
+  "🎯 Ravi got instant results",
+  "💎 Pooja unlocked premium benefits"
 ];
 
 setInterval(()=>{
@@ -285,16 +399,17 @@ setInterval(()=>{
 },3000);
 
 let popupData = [
-  "Rahul won ₹2300",
-  "Amit won ₹5400",
-  "Sneha earned ₹1200",
-  "Ravi won ₹3000"
+  "🔥 Rahul unlocked a reward",
+  "⭐ Amit completed a level",
+  "🚀 Sneha achieved a milestone",
+  "🎯 Ravi got instant results",
+  "💎 Pooja unlocked premium benefits"
 ];
 
 setInterval(()=>{
   let popup = document.getElementById("popup");
 
-  popup.innerText = "💰 " + popupData[Math.floor(Math.random()*popupData.length)];
+  popup.innerText = "🎉  " + popupData[Math.floor(Math.random()*popupData.length)];
 
   popup.classList.add("show");
 
