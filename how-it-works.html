@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at top,#1a1443,#0b1220);
+  color:white;
+}
+
+.header{
+  padding:20px;
+  text-align:center;
+  background:linear-gradient(90deg,#ff7a7a,#a855f7,#3b82f6);
+}
+
+.logo{width:120px;}
+
+.container{padding:20px;max-width:900px;margin:auto;}
+
+.step{
+  background:#1e1b4b;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:15px;
+}
+
+h1{text-align:center;}
+h2{color:#a855f7;}
+
+.back{
+  display:block;
+  text-align:center;
+  margin-top:20px;
+  color:#3b82f6;
+}
+
+.navbar{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  padding:12px;
+  background:#0b1220;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  padding:8px 14px;
+  border-radius:20px;
+
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  background:linear-gradient(90deg,#ff7a7a,#a855f7,#3b82f6);
+  box-shadow:0 0 10px rgba(168,85,247,0.7);
+}
+
+.navbar a.active{
+  background:linear-gradient(90deg,#ff7a7a,#a855f7,#3b82f6);
+}
+
+
+@media(max-width:768px){
+  .navbar{
+    gap:10px;
+    padding:10px;
+  }
+
+  .navbar a{
+    font-size:13px;
+    padding:6px 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms and Conditions</a>
+</div>
+
+<div class="header">
+  <img src="images/logo.jpg" class="logo">
+</div>
+
+<div class="container">
+
+<h1>How It Works</h1>
+
+<div class="step">
+  <h2>1️⃣ Get Started</h2>
+  <p>Access the platform and begin with a simple registration process.</p>
+</div>
+
+<div class="step">
+  <h2>2️⃣ Explore Features</h2>
+  <p>Browse through available sections and discover interactive elements.</p>
+</div>
+
+<div class="step">
+  <h2>3️⃣ Engage</h2>
+  <p>Interact with the platform in a smooth and responsive environment.</p>
+</div>
+
+<div class="step">
+  <h2>4️⃣ Continue Experience</h2>
+  <p>Stay active and explore updates regularly for a better experience.</p>
+</div>
+
+<a href="index.html" class="back">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>
